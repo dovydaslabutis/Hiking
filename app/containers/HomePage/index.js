@@ -6,8 +6,9 @@
  */
 
 import React from 'react';
-import Navbar from 'components/Header/NavBar';
+
+import Login from 'components/Main/Login';
 
 export default function HomePage() {
-  return <Navbar />;
+  return <Login />;
 }
