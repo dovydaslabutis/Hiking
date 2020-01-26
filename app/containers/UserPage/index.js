@@ -5,7 +5,7 @@ export default function UserPage() {
   return (
     <div>
       <Navbar />
-      <p> User page</p>
+      <p>Hi</p>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
-export default function SignUp(props) {
+export default function AddNewUser(props) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -13,7 +14,7 @@ export default function SignUp(props) {
   }
   const { history } = props;
   return (
-    <div className="SignUp">
+    <div className="AddNewUser">
       <form onSubmit={handleSubmit}>
         <input
           type="email"
@@ -44,3 +45,9 @@ export default function SignUp(props) {
     </div>
   );
 }
+
+AddNewUser.propTypes = {
+  history: PropTypes.shape({
+    push: PropTypes.func,
+  }),
+};
