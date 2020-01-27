@@ -6,9 +6,9 @@
  */
 
 import React, { useState } from 'react';
+import './styles.css';
 
 import PropTypes from 'prop-types';
-// import Login from 'containers/Login';
 
 export default function HomePage(props) {
   const [email, setEmail] = useState('');
@@ -24,7 +24,6 @@ export default function HomePage(props) {
   const { history } = props;
   return (
     <>
-      {/* <Login /> */}
       <div className="Login">
         <form onSubmit={handleSubmit}>
           <input

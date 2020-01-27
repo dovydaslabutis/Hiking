@@ -12,7 +12,6 @@ import { Switch, Route } from 'react-router-dom';
 
 import HomePage from 'containers/HomePage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
-import AddNewHikePage from 'containers/AddNewHikePage';
 import ListPage from 'containers/ListPage';
 import MapPage from 'containers/MapPage';
 import UserPage from 'containers/UserPage';
@@ -25,7 +24,6 @@ export default function App() {
     <div>
       <Switch>
         <Route exact path="/" component={HomePage} />
-        <Route exact path="/AddNewHikePage" component={AddNewHikePage} />
         <Route exact path="/ListPage" component={ListPage} />
         <Route exact path="/MapPage" component={MapPage} />
         <Route exact path="/UserPage" component={UserPage} />
