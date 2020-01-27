@@ -1,0 +1,17 @@
+.divbox {
+    background-color:white;
+    opacity: 0.75;
+    width: 250px;
+    border: 1px solid black;
+    margin: 30px;
+    padding: 20px;
+}
+.divbox:hover {
+    background-color:white;
+    opacity: 1.0;
+    
+}
+
+.CounterStyle {
+  margin:30px;
+}

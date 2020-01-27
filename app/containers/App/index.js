@@ -16,12 +16,18 @@ import ListPage from 'containers/ListPage';
 import MapPage from 'containers/MapPage';
 import UserPage from 'containers/UserPage';
 import AddNewUser from 'containers/AddNewUser';
-
+// import Background from 'containers/Img/Image.jpg';
 import GlobalStyle from '../../global-styles';
+import './index.css';
+// const sectionStyle = {
+//   width: '100%',
+//   height: '1000px',
+//   backgroundImage: `url(${Background})`,
+// };
 
 export default function App() {
   return (
-    <div>
+    <div className="bg">
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/ListPage" component={ListPage} />
