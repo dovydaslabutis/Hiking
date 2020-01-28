@@ -1,13 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './stylesNavBar.css';
-import { withTheme } from 'styled-components';
 
 const LinkStyle = { textDecoration: 'none', padding: 10 };
 
 export default function NavBar() {
   return (
-    <div className="NavBar"> 
+    <div className="NavBar">
       <h2>
         <Link style={LinkStyle} to="/UserPage">
           Home

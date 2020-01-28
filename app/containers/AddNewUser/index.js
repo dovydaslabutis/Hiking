@@ -28,12 +28,6 @@ export default function AddNewUser(props) {
           onChange={e => setPassword(e.target.value)}
           placeholder="Enter Password"
         />
-        <input
-          type="password"
-          value={password}
-          onChange={e => setPassword(e.target.value)}
-          placeholder="Enter Password Again"
-        />
         <button
           disabled={!validateForm()}
           onClick={() => history.push('/')}
