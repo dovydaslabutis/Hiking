@@ -2,7 +2,6 @@ import React, { useState, createContext, useEffect } from 'react';
 // import HikeList from 'components/Hikes/HikeList';
 // import CountHikes from 'components/Hikes/CountHikes';
 import PropTypes from 'prop-types';
-
 export const HikeContext = createContext();
 
 export const HikeProvider = props => {
@@ -51,7 +50,6 @@ export const HikeProvider = props => {
         location: 'Naujoji akmene',
       },
     ],
-    [],
     () => {
       const localData = localStorage.getItem('hikes');
       return localData ? JSON.parse(localData) : [];

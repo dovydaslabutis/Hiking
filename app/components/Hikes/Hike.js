@@ -17,16 +17,7 @@ export default Hike;
 
 Hike.propTypes = {
   name: PropTypes.array,
-};
-
-Hike.propTypes = {
   type: PropTypes.array,
-};
-
-Hike.propTypes = {
   length: PropTypes.array,
-};
-
-Hike.propTypes = {
   location: PropTypes.array,
 };

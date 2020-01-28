@@ -5,13 +5,22 @@
  *
  */
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './styles.css';
-
 import PropTypes from 'prop-types';
 
+const useStateWithLocalStorage = localStorageKey => {
+  const [email, setEmail] = useState(
+    localStorage.getItem(localStorageKey) || '',
+  );
+  useEffect(() => {
+    localStorage.setItem(localStorageKey, email);
+  }, [email]);
+  return [email, setEmail];
+};
+
 export default function HomePage(props) {
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useStateWithLocalStorage('email');
   const [password, setPassword] = useState('');
 
   function validateForm() {
@@ -22,6 +31,7 @@ export default function HomePage(props) {
     event.preventDefault();
   }
   const { history } = props;
+
   return (
     <>
       <div className="Login">
